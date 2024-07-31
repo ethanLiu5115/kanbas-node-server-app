@@ -1,4 +1,5 @@
 import express from "express";
+import Hello from "./Hello.js"
 import Lab5 from "./Lab5/index.js";
 import CourseRoutes from "./Kanbas/Courses/routes.js";
 import ModuleRoutes from "./Kanbas/Modules/routes.js";
@@ -12,6 +13,7 @@ app.use(express.json());
 ModuleRoutes(app);
 CourseRoutes(app);
 AssignmentRoutes(app);
+Hello(app)
 Lab5(app);
 
 app.listen(4000);
